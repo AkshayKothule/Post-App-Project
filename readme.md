@@ -22,3 +22,25 @@ To prevent accidentally leaking env variables to the client, only variables pref
 Only VITE_SOME_KEY will be access as import.meta.env.VITE_SOME_KEY to your client source code
 
 ```
+
+## hooks
+```javascript
+
+forwardRef :-
+the forwardRef hook is a utility function that passes a ref from a component to one of its children. This allows you to access a ref further down the DOM tree.
+
+In the example below, if we try passing a ref as a prop from the App component to the SubmitButton component, we'll get an error in the console.
+
+You can use forwardRef to expose DOM nodes inside a component to its parent component.
+
+You can use forwardRef to access child-defined properties or methods in the parent component.
+
+
+
+
+
+
+
+
+```
+
