@@ -29,6 +29,7 @@ Only VITE_SOME_KEY will be access as import.meta.env.VITE_SOME_KEY to your clien
 
 ```
 
+
 ## hooks
 ```javascript
 
@@ -49,4 +50,6 @@ You can use forwardRef to access child-defined properties or methods in the pare
 
 
 ```
+
+## validater link :https://regexr.com/
 
