@@ -104,7 +104,7 @@ export class Service{
 
     //query 
 
-    async getsPost(quries=[Query.equal("status" , "active")]){
+    async getPosts(quries=[Query.equal("status" , "active")]){
         try {
             return await this.databases.listDocuments(
                 confi.appwriteDatabaseId,
