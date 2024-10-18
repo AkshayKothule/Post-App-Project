@@ -1,4 +1,4 @@
-import confi from '../confi.js'
+import confi from '../confi/confi'
 
 import { Client, ID , Storage , Databases , Query } from "appwrite";
 

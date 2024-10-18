@@ -6,6 +6,12 @@ import { Provider } from 'react-redux'
 import store from './store/store.js'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
+import { authLayout , Login } from './components/index.js'
+import Signup from './pages/Signup.jsx'
+import AllPosts from "./pages/AllPost.jsx"
+import AddPost from "./pages/AddPost.jsx"
+import EditPost from "./pages/EditPost.jsx"
+import Post from './pages/Post.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,44 +25,44 @@ const router = createBrowserRouter([
         {
             path: "/login",
             element: (
-                <AuthLayout authentication={false}>
+                <authLayout authentication={false}>
                     <Login />
-                </AuthLayout>
+                </authLayout>
             ),
         },
         {
             path: "/signup",
             element: (
-                <AuthLayout authentication={false}>
+                <authLayout authentication={false}>
                     <Signup />
-                </AuthLayout>
+                </authLayout>
             ),
         },
         {
             path: "/all-posts",
             element: (
-                <AuthLayout authentication>
+                <authLayout authentication>
                     {" "}
                     <AllPosts />
-                </AuthLayout>
+                </authLayout>
             ),
         },
         {
             path: "/add-post",
             element: (
-                <AuthLayout authentication>
+                <authLayout authentication>
                     {" "}
                     <AddPost />
-                </AuthLayout>
+                </authLayout>
             ),
         },
         {
             path: "/edit-post/:slug",
             element: (
-                <AuthLayout authentication>
+                <authLayout authentication>
                     {" "}
                     <EditPost />
-                </AuthLayout>
+                </authLayout>
             ),
         },
         {
