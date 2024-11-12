@@ -1,4 +1,4 @@
-import confi from '../confi/confi'
+import confi from '../conf/conf'
 
 import { Client, ID , Storage , Databases , Query } from "appwrite";
 
@@ -154,7 +154,7 @@ export class Service{
 
     }
 
-    getfilePreview(fileId){
+    getFilePreview(fileId){
         return this.buket.getFilePreview(
             confi.appwriteBucketId,
             fileId

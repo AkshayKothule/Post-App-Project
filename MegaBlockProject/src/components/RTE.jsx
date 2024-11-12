@@ -14,6 +14,7 @@ export default function RTE({name, control, label, defaultValue =""}) {
     render={({field: {onChange}}) => (
         <Editor
         initialValue={defaultValue}
+        apiKey='ybmeuwhaexgg1grw7wdypzre1cqgo1mefabyf2kjzfdcnd6w'
         init={{
             initialValue: defaultValue,
             height: 500,
@@ -45,7 +46,6 @@ export default function RTE({name, control, label, defaultValue =""}) {
             content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"
         }}
         onEditorChange={onChange}
-        
         />
     )}
     />
